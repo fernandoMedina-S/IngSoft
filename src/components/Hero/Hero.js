@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="hero__main-container">
         <h1>Enterate de lo nuevo</h1>
         <h2>Descubre los nuevos eventos en CUCEI</h2>
-        <Link to="/login">
+        <Link to="/events">
           <button>Explorar</button>
         </Link>
       </div>
