@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/IngSoft/static/css/main.48286991.css",
+    "main.js": "/IngSoft/static/js/main.63ca824e.js",
+    "static/js/787.3322a07b.chunk.js": "/IngSoft/static/js/787.3322a07b.chunk.js",
+    "static/media/rectoria.jpg": "/IngSoft/static/media/rectoria.dbfbb0b0631f4dd98fdb.jpg",
+    "static/media/cucei.jpg": "/IngSoft/static/media/cucei.06c889512615fd0e1046.jpg",
+    "static/media/card.jpg": "/IngSoft/static/media/card.e0532012d5653c2ffa3f.jpg",
+    "index.html": "/IngSoft/index.html",
+    "main.48286991.css.map": "/IngSoft/static/css/main.48286991.css.map",
+    "main.63ca824e.js.map": "/IngSoft/static/js/main.63ca824e.js.map",
+    "787.3322a07b.chunk.js.map": "/IngSoft/static/js/787.3322a07b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48286991.css",
+    "static/js/main.63ca824e.js"
+  ]
+}
