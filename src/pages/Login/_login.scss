@@ -1,0 +1,61 @@
+.login__layout{
+    padding: 0;
+    margin: -1rem -.5rem;
+    min-height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 1), transparent), url("../../assets/rectoria.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login__main-container{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 50vh;
+    min-height: 50vh;
+    background-color: #F5F2E7;
+}
+
+.login__email-block{
+    margin: 1rem;
+}
+
+.login__password-block{
+    margin: 1rem;
+}
+
+.login__input-email{
+    margin-left: 2.7rem;
+}
+
+.login__input-password{
+    margin-left: .5rem;
+}
+
+.login__second-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: -6rem;
+}
+
+.login__sign-in-button{
+    margin: .5rem;
+    padding: .5rem;
+    width: 5rem;
+}
+
+.login__google-button{
+    margin-top: 2rem;
+}
+
+.alert__text{
+    color: white;
+}

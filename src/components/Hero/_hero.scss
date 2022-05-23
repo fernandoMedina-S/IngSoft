@@ -1,0 +1,33 @@
+.hero__main-container{
+    padding: 0;
+    margin: -1rem -.5rem;
+    min-height: 94vh;
+    background: linear-gradient(rgba(0, 0, 0, .7), transparent), url("../../assets/cucei.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & h1{
+        font-size: 4rem;
+    }
+
+    & h2 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    & button{
+        padding: 2rem 6rem;
+        background: #FDEFF4;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+

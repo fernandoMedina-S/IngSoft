@@ -1,0 +1,43 @@
+nav {
+  padding: 0;
+  display: flex;
+
+  margin: -0.5rem;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+  margin-top: -1.5rem;
+  margin-bottom: -1;
+}
+
+.navbar__main-list {
+  background-color: #524A4E;
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar__logo {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.5rem;
+  letter-spacing: -0.1rem;
+  padding: .5rem;
+  color: black;
+  flex: 2 1 40rem;
+  color: #EEEDDE;
+  margin-left: -10rem;
+  margin-right: 10rem;
+}
+
+.navbar__item-container {
+  margin: auto 1rem;
+  text-decoration: none;
+}
+
+.navbar__list-item {
+  text-decoration: none;
+  color: #EEEDDE;
+}
+

@@ -1,0 +1,25 @@
+.create-event__main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #EDCDBB;
+    margin: -.5rem;
+    margin-top: -1rem;
+    min-height: 94vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-event__form{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+    width: 40vh;
+    background-color: #FFEDDB;
+    border: solid #E3B7A0;
+    text-align: center;
+}
+
+.create-event__button{
+    margin-top: 1rem !important;
+}
