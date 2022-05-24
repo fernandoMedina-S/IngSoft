@@ -9,6 +9,8 @@ const Register = () => {
     email: "",
     password: "",
   });
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const [error, setError] = useState("");
   const navigate = useNavigate();
@@ -20,6 +22,7 @@ const Register = () => {
       await signup(user.email, user.password);
       navigate("/");
     } catch (error) {
+      console.log(error);
       setError(error.message);
     }
   };
@@ -29,7 +32,7 @@ const Register = () => {
       {error && <Alert message={error} />}
 
       <form onSubmit={handleSubmit} className="login__main-container">
-        <h2>Registate</h2>
+        <h2>Registrate</h2>
         <div className="login__email-block">
           <label htmlFor="email" className="login__label-email">
             Correo

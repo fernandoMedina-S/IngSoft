@@ -1,4 +1,4 @@
-.create-event__main-container{
+.profile__main-container{
     display: flex;
     flex-direction: column;
     background-color: #EDCDBB;
@@ -9,7 +9,7 @@
     justify-content: center;
 }
 
-.create-event__form{
+.profile__profile-container{
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -18,12 +18,4 @@
     background-color: #FFEDDB;
     border: solid #E3B7A0;
     text-align: center;
-}
-
-.create-event__button{
-    margin-top: 1rem !important;
-}
-
-.create-event__back-button{
-    margin-top: 1rem !important;
 }

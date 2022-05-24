@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 40vh;
-    height: 42vh;
+    height: 45vh;
     background-color: #FFEDDB;
     border: solid #E3B7A0;
     margin: 2rem;
@@ -14,4 +14,9 @@
 
 .event-card__text-area{
     margin-left: .5rem;
+}
+
+.event-card__delete-button{
+    display: flex;
+    justify-content: flex-end;
 }

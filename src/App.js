@@ -8,6 +8,7 @@ import EventsPage from "./pages/EventsPage/EventsPage";
 import ProtectedRoute from "./util/ProtectedRoute";
 import Register from "./pages/Register/Register";
 import CreateEvent from "./pages/CreateEvent";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   const xd = () => {
@@ -34,6 +35,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <CreateEvent />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+                <Profile />
               </ProtectedRoute>
             }
           />

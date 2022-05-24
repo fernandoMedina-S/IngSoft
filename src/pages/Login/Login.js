@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate, Navigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { Alert } from "../../util/Alert";
+import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -18,9 +19,17 @@ const Login = () => {
     setError("");
     try {
       await login(user.email, user.password);
-      navigate("/events");
+      navigate("/profile");
     } catch (error) {
-      setError(error.message);
+      toast.error("Error: cuenta no válida", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   };
 
@@ -30,29 +39,70 @@ const Login = () => {
   const handleGoogleSignin = async () => {
     try {
       await loginWithGoogle();
-      navigate("/events");
+      navigate("/profile");
     } catch (error) {
-      setError(error.message);
+      toast.error("Cuenta de Google no válida", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   };
 
   const handleResetPassword = async (e) => {
     e.preventDefault();
-    if (!user.email) return setError("Write an email to reset password");
+    if (!user.email)
+      return toast.error("Error: Ingresa un correo válido", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     try {
       await resetPassword(user.email);
-      setError("We sent you an email. Check your inbox");
+      toast.success("Se mandó un correo a la dirección solicitada", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     } catch (error) {
-      setError(error.message);
+      toast.error("Error: Ingresa un correo válido", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   };
 
-  
-
   return (
     <div className="login__layout">
-      {error && <Alert message={error} />}
-
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <form onSubmit={handleSubmit} className="login__main-container">
         <h2>Inicia Sesión</h2>
         <div className="login__email-block">
@@ -94,10 +144,7 @@ const Login = () => {
             ¿Olvidaste la contraseña?
           </a>
         </div>
-        <button
-          onClick={handleGoogleSignin}
-          className="login__google-button"
-        >
+        <button onClick={handleGoogleSignin} className="login__google-button">
           Inicia con Google
         </button>
         <p className="login__register-text">
